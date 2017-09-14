@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/d_8">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/label_doctor_dir" />
+
+    <View
+        android:layout_width="500dp"
+        android:layout_height="@dimen/d_2"
+        android:layout_marginTop="@dimen/d_4"
+        android:background="@color/darkGrey" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvDoctorList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d_4"
+        android:scrollbarThumbVertical="@drawable/scroll_thumb" />
+
+    <Button
+        android:id="@+id/bDismiss"
+        style="@style/button_14_primary_full"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="@dimen/d_8"
+        android:minHeight="0dp"
+        android:paddingBottom="@dimen/d_8"
+        android:paddingTop="@dimen/d_8"
+        android:text="@string/action_dismiss" />
+
+</LinearLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d_16"
+        android:layout_marginStart="@dimen/d_32"
+        android:layout_marginEnd="@dimen/d_32"
+        android:layout_marginBottom="@dimen/d_16"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/text_16_black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_enter_hospital_details" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilHospitalName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_round_bordered_edit_box"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="@dimen/d_16"
+            >
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/etHospitalName"
+            style="@style/edit_16_bg_padding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:hint="@string/prompt_hospital_name"
+            android:inputType="textPersonName"
+            android:imeOptions="flagNoExtractUi"
+            android:padding="@dimen/d_6" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_round_bordered_edit_box"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="@dimen/d_16"
+            >
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/etPhoneNumber"
+            style="@style/edit_16_bg_padding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="flagNoExtractUi"
+            android:hint="@string/prompt_phone_number"
+            android:inputType="phone"/>
+    </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_round_bordered_edit_box"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="@dimen/d_16"
+            >
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/etEmail"
+            style="@style/edit_16_bg_padding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/prompt_email"
+            android:imeOptions="flagNoExtractUi"
+            android:inputType="textEmailAddress"/>
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_round_bordered_edit_box"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="@dimen/d_16"
+            >
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/etAddress"
+            style="@style/edit_16_bg_padding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="flagNoExtractUi"
+            android:hint="@string/prompt_address"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d_16"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bCancel"
+                style="@style/button_16_primary"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/action_cancel" />
+
+            <View
+                android:layout_width="@dimen/d_8"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/bSave"
+                style="@style/button_16_primary"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/action_save" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

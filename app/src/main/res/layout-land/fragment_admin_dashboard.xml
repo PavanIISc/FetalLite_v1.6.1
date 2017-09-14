@@ -1,0 +1,180 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.sattvamedtech.fetallite.fragment.AdminDashboardFragment">
+
+    <LinearLayout
+        android:id="@+id/llHospitalDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/d_16"
+        android:background="@drawable/grey_bg"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/d_16"
+        android:paddingLeft="@dimen/d_8"
+        android:paddingRight="@dimen/d_8"
+        android:paddingTop="@dimen/d_16">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/text_14_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_login_id" />
+
+            <TextView
+                android:id="@+id/tvLoginId"
+                style="@style/text_14_black_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d_4" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/text_14_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_password" />
+
+            <TextView
+                android:id="@+id/tvPassword"
+                style="@style/text_14_black_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d_4"
+                android:text="@string/label_dummy_password" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/text_14_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_phone" />
+
+            <TextView
+                android:id="@+id/tvPhone"
+                style="@style/text_14_black_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d_4" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/text_14_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_email" />
+
+            <TextView
+                android:id="@+id/tvEmail"
+                style="@style/text_14_black_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d_4" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/ibEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical"
+                android:background="@android:color/transparent"
+                android:padding="@dimen/d_4"
+                android:src="@drawable/edit_white" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvHospitalList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_below="@+id/rlAddHospital"
+        android:layout_alignParentStart="true"
+        android:scrollbarThumbVertical="@drawable/scroll_thumb"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bNext"
+        android:layout_below="@+id/rvHospitalList">
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/bNext"
+        style="@style/button_16_primary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/d_16"
+        android:background="@drawable/button_color_primary_corners" />
+
+    <RelativeLayout
+        android:id="@+id/rlAddHospital"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/llHospitalDetail"
+        android:layout_toStartOf="@+id/bNext">
+
+        <ImageView
+            android:id="@+id/ivAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:adjustViewBounds="false"
+            android:src="@drawable/add" />
+
+        <TextView
+            android:id="@+id/tvAdd"
+            style="@style/text_14_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="13dp"
+            android:layout_toEndOf="@+id/ivAdd"
+            android:gravity="center_vertical"
+            android:text="@string/label_add_hospital_dashboard"
+            android:textAllCaps="true"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

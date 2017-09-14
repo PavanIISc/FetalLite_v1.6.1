@@ -1,0 +1,63 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="d_1">1dp</dimen>
+    <dimen name="d_2">2dp</dimen>
+    <dimen name="d_4">4dp</dimen>
+    <dimen name="d_6">6dp</dimen>
+    <dimen name="d_8">8dp</dimen>
+    <dimen name="d_12">12dp</dimen>
+    <dimen name="d_14">14dp</dimen>
+    <dimen name="d_16">16dp</dimen>
+    <dimen name="d_24">24dp</dimen>
+    <dimen name="d_32">32dp</dimen>
+    <dimen name="d_36">36dp</dimen>
+    <dimen name="d_40">40dp</dimen>
+    <dimen name="d_48">48dp</dimen>
+    <dimen name="d_56">56dp</dimen>
+    <dimen name="d_64">64dp</dimen>
+    <dimen name="d_72">72dp</dimen>
+    <dimen name="d_96">96dp</dimen>
+    <dimen name="d_128">128dp</dimen>
+
+    <dimen name="nd_4">-4dp</dimen>
+
+    <dimen name="d_home_button_width">150dp</dimen>
+
+    <dimen name="t_9">9sp</dimen>
+    <dimen name="t_10">10sp</dimen>
+    <dimen name="t_12">12sp</dimen>
+    <dimen name="t_14">14sp</dimen>
+    <dimen name="t_16">16sp</dimen>
+    <dimen name="t_18">18sp</dimen>
+    <dimen name="t_20">20sp</dimen>
+    <dimen name="t_40">40sp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="activity_gutter_margin_quarter">4dp</dimen>
+    <dimen name="activity_gutter_margin_half">8dp</dimen>
+    <dimen name="activity_gutter_margin_three_fourth">12dp</dimen>
+    <dimen name="activity_gutter_margin">16dp</dimen>
+    <dimen name="activity_gutter_margin_one_and_half">24dp</dimen>
+    <dimen name="activity_gutter_margin_double">32dp</dimen>
+    <dimen name="activity_gutter_margin_two_and_half">40dp</dimen>
+    <dimen name="activity_gutter_margin_triple">48dp</dimen>
+    <dimen name="activity_gutter_margin_quadruple">64dp</dimen>
+
+    <!--Common Button Dimensions-->
+    <dimen name="common_rounded_button_height">28dp</dimen>
+    <dimen name="common_button_text_size">16sp</dimen>
+    <dimen name="common_button_radius">2dp</dimen>
+
+    <!--Common DialogBean Dimensions-->
+    <dimen name="common_dialog_button_height">48dp</dimen>
+
+    <!--Common EditText Dimensions-->
+    <dimen name="bordered_edit_text_size">14sp</dimen>
+
+</resources>

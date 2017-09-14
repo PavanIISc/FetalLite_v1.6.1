@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:clickable="true"
+    android:orientation="vertical"
+    tools:context="com.sattvamedtech.fetallite.fragment.HospitalDetailsFragment"
+    android:baselineAligned="false">
+
+    <include layout="@layout/item_hospital_list" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="114dp"
+        android:layout_height="43dp"
+        app:srcCompat="@drawable/switch_legend" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_2"
+        android:layout_marginTop="@dimen/d_8"
+        android:background="@color/darkGrey" />
+
+    <LinearLayout
+        android:id="@+id/llHospitalDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/d_8"
+        android:layout_marginTop="@dimen/d_8"
+        android:background="@drawable/grey_bg"
+        android:orientation="horizontal"
+        android:padding="@dimen/d_8">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/text_14_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_phone" />
+
+            <TextView
+                android:id="@+id/tvPhone"
+                style="@style/text_14_black_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d_4" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/text_14_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_email" />
+
+            <TextView
+                android:id="@+id/tvEmail"
+                style="@style/text_14_black_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d_4" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/text_14_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_address" />
+
+            <TextView
+                android:id="@+id/tvAddress"
+                style="@style/text_14_black_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d_4"
+                android:ellipsize="end"
+                android:maxLines="1" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="end|center_vertical"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/ibDeleteHospital"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:padding="@dimen/d_4"
+                    android:src="@drawable/delete"
+                    android:visibility="gone"/>
+
+                <ImageButton
+                    android:id="@+id/ibEditHospital"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/d_8"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:padding="@dimen/d_4"
+                    android:src="@drawable/edit_white" />
+            </LinearLayout>
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="196dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/layout_border_grey"
+            android:orientation="vertical"
+            android:padding="@dimen/d_8">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/text_16_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@+id/bAddUser"
+                    android:text="@string/label_user_cred" />
+
+                <Button
+                    android:id="@+id/bAddUser"
+                    style="@style/button_16_primary_full"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:minHeight="0dp"
+                    android:padding="@dimen/d_4"
+                    android:text="@string/action_add" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_2"
+                android:layout_marginTop="@dimen/d_4"
+                android:background="@color/darkGrey" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvUserList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d_4"
+                android:scrollbarThumbVertical="@drawable/scroll_thumb" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/d_8"
+            android:layout_weight="1"
+            android:background="@drawable/layout_border_grey"
+            android:orientation="vertical"
+            android:padding="@dimen/d_8">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/text_16_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@+id/bAddDoctor"
+                    android:text="@string/label_doctor_dir" />
+
+                <Button
+                    android:id="@+id/bAddDoctor"
+                    style="@style/button_16_primary_full"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:minHeight="0dp"
+                    android:padding="@dimen/d_4"
+                    android:text="@string/action_add" />
+
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_2"
+                android:layout_marginTop="@dimen/d_4"
+                android:background="@color/darkGrey" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvDoctorList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d_4"
+                android:scrollbarThumbVertical="@drawable/scroll_thumb" />
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bNext"
+        style="@style/button_16_primary"
+        android:layout_width="176dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/button_color_primary_corners"
+        android:text="Next" />
+
+    <RelativeLayout
+        android:layout_width="170dp"
+        android:layout_height="wrap_content">
+
+    </RelativeLayout>
+</LinearLayout>

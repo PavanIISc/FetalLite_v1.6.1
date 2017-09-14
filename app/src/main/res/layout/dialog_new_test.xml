@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:padding="@dimen/d_16"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/text_14_black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/label_enter_patient_details" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d_8"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/vDummyHorizontalSeparator"
+                    android:layout_width="@dimen/d_8"
+                    android:layout_height="0dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@android:color/transparent" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/etPatientId"
+                    style="@style/edit_18_bg_padding"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_toStartOf="@+id/vDummyHorizontalSeparator"
+                    android:hint="@string/prompt_id"
+                    android:inputType="textPersonName"
+                    android:padding="@dimen/d_8"
+                    android:imeOptions="flagNoExtractUi"
+                    android:nextFocusForward="@+id/etFirstName">
+                    <requestFocus />
+                </AutoCompleteTextView>
+
+
+                <EditText
+                    android:id="@+id/etAge"
+                    style="@style/edit_18_bg_padding"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_toEndOf="@+id/vDummyHorizontalSeparator"
+                    android:hint="@string/prompt_age"
+                    android:inputType="number"
+                    android:padding="@dimen/d_8"
+                    android:imeOptions="flagNoExtractUi"
+                    android:nextFocusForward="@+id/etLastName"/>
+
+                <EditText
+                    android:id="@+id/etFirstName"
+                    style="@style/edit_18_bg_padding"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/etPatientId"
+                    android:layout_marginTop="@dimen/d_8"
+                    android:layout_toStartOf="@+id/vDummyHorizontalSeparator"
+                    android:hint="@string/prompt_first_name"
+                    android:inputType="textPersonName"
+                    android:padding="@dimen/d_8"
+                    android:imeOptions="flagNoExtractUi"
+                    android:nextFocusForward="@+id/etAge"/>
+
+                <EditText
+                    android:id="@+id/etLastName"
+                    style="@style/edit_18_bg_padding"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/etPatientId"
+                    android:layout_marginTop="@dimen/d_8"
+                    android:layout_toEndOf="@+id/vDummyHorizontalSeparator"
+                    android:hint="@string/prompt_surname"
+                    android:inputType="textPersonName"
+                    android:padding="@dimen/d_8"
+                    android:imeOptions="flagNoExtractUi"
+                    android:nextFocusForward="@+id/sRiskFactor"/>
+
+                <FrameLayout
+                    android:id="@+id/flRiskFactor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/etFirstName"
+                    android:padding="@dimen/d_4"
+                    android:layout_marginTop="@dimen/d_8"
+                    android:layout_toStartOf="@+id/vDummyHorizontalSeparator"
+                    android:background="@drawable/edit_text_grey_bg_with_padding">
+
+                    <Spinner
+                        android:id="@+id/sRiskFactor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:nextFocusForward="@+id/sGravidity"/>
+                </FrameLayout>
+
+                <LinearLayout
+                    android:id="@+id/llGravidityParity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/etLastName"
+                    android:layout_marginTop="@dimen/d_8"
+                    android:layout_toEndOf="@+id/vDummyHorizontalSeparator"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:id="@+id/flGravidity"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/d_4"
+                        android:layout_marginEnd="@dimen/d_4"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_text_grey_bg_with_padding">
+
+                        <Spinner
+                            android:id="@+id/sGravidity"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:nextFocusForward="@+id/sParity"/>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/flParity"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/d_4"
+                        android:layout_marginStart="@dimen/d_4"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_text_grey_bg_with_padding">
+
+                        <Spinner
+                            android:id="@+id/sParity"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:nextFocusForward="@+id/sDoctor"/>
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:id="@+id/flDoctor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/llGravidityParity"
+                    android:layout_marginTop="@dimen/d_8"
+                    android:padding="@dimen/d_4"
+                    android:layout_toEndOf="@+id/vDummyHorizontalSeparator"
+                    android:background="@drawable/edit_text_grey_bg_with_padding">
+
+                    <Spinner
+                        android:id="@+id/sDoctor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:nextFocusForward="@+id/sbTestDuration"/>
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/flRiskFactor"
+                    android:layout_marginTop="@dimen/d_8"
+                    android:layout_toStartOf="@+id/vDummyHorizontalSeparator"
+                    android:orientation="horizontal"
+                    android:paddingEnd="@dimen/d_4"
+                    android:paddingStart="@dimen/d_4">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_gestational_age" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/d_16"
+
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <NumberPicker
+                            android:id="@+id/npWeek"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/d_56" />
+
+                        <TextView
+                            style="@style/text_10_black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/label_weeks" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/d_16"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <NumberPicker
+                            android:id="@+id/npDay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/d_56" />
+
+                        <TextView
+                            style="@style/text_10_black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/label_days" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                style="@style/text_14_black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d_8"
+                android:text="@string/label_set_test_duration" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d_8"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tvTestDuration"
+                    style="@style/text_20_black_bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:minWidth="180dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/d_8"
+                    android:orientation="vertical">
+
+
+                    <SeekBar
+                        android:id="@+id/sbTestDuration"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:max="45"
+                        android:nextFocusForward="@+id/bStartTest"
+                        />
+
+
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/d_8"
+                        android:layout_marginStart="@dimen/d_8"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/text_12_grey"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="start|center_vertical"
+                            android:text="15" />
+
+                        <TextView
+                            style="@style/text_12_grey"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:text="30" />
+
+                        <TextView
+                            style="@style/text_12_grey"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:text="45" />
+
+                        <TextView
+                            style="@style/text_12_grey"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="60" />
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/llButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/d_16"
+        android:paddingEnd="@dimen/d_16"
+        android:paddingStart="@dimen/d_16">
+
+        <Button
+            android:id="@+id/bCancel"
+            style="@style/button_14_primary"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/action_cancel" />
+
+        <View
+            android:layout_width="@dimen/d_8"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/bStartTest"
+            style="@style/button_14_primary"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/action_start_test" />
+
+    </LinearLayout>
+
+</RelativeLayout>

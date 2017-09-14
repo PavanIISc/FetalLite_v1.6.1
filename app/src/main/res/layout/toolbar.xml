@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:gravity="end"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/llToolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/app_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/app_toolbar_text"
+                style="@style/text_18_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/action_menu"
+                android:visibility="gone"/>
+        </android.support.v7.widget.Toolbar>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d_4"
+            android:layout_marginEnd="@dimen/d_16"
+            android:layout_marginStart="@dimen/d_16"
+            android:layout_marginTop="@dimen/nd_4"
+            android:background="@color/colorAccent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="@dimen/d_16"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/ivMenuAction"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/d_32"
+            android:src="@drawable/menu" />
+
+        <TextView
+            style="@style/text_12_grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/action_menu" />
+    </LinearLayout>
+
+</LinearLayout>

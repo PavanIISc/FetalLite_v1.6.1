@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.sattvamedtech.fetallite"
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          android:versionName="@string/version">
+
+    <!-- updated by Pavan -->
+
+
+    <!-- Production Version Test -->
+    <!-- Testing again -->
+    <!-- test 1st August -->
+
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+
+    <application
+        android:name=".FLApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.SplashActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.SystemSyncActivity"
+            android:label="@string/label_system_sync"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".activity.AdminRegistrationActivity"
+            android:label="@string/label_registration"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="stateVisible"/>
+        <activity
+            android:name=".activity.AdminDetailsActivity"
+            android:label="@string/label_registration"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="stateVisible"/>
+        <activity
+            android:name=".activity.DeviceRegistrationActivity"
+            android:label="@string/label_device_registration"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="stateVisible"/>
+        <activity
+            android:name=".activity.AdminDashboardActivity"
+            android:label=""
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".activity.HomeActivity"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".activity.TutorialsActivity"
+            android:label="@string/label_tutorials"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".activity.VideoPlayerActivity"
+            android:label="@string/label_tutorials"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:screenOrientation="landscape"/>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="bfb404c4b73c1988c02ba6954f1f053aaf248934"/>
+
+        <service
+            android:name=".process.InitialDataSocketIntentService"
+            android:exported="false"/>
+        <service
+            android:name=".process.DataSocketIntentService"
+            android:exported="false"/>
+        <service
+            android:name=".process.PrintSocketIntentService"
+            android:exported="false"/>
+        <service
+            android:name=".job.CompressionJobService"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE"/>
+
+        <activity android:name=".activity.HospitalRegistrationActivity"
+                  android:screenOrientation="landscape">
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.android.sattva.activity.DeviceRegistrationActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/activity_gutter_margin"
+        android:paddingLeft="@dimen/activity_gutter_margin_double"
+        android:paddingRight="@dimen/activity_gutter_margin_double"
+        android:paddingBottom="@dimen/activity_gutter_margin">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DEVICE REGISTRATION"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"/>
+
+        <View
+            android:id="@+id/underline"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_below="@id/tv_title"
+            android:layout_marginTop="@dimen/activity_gutter_margin_half"
+            android:background="@color/app_violet" />
+
+        <TextView
+            android:id="@+id/tv_sensor_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/underline"
+            android:layout_marginTop="@dimen/activity_gutter_margin_one_and_half"
+            android:text="Please turn on the Sensor Unit."
+            android:textSize="14sp"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/tv_sync_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_sensor_unit"
+            android:layout_marginTop="@dimen/activity_gutter_margin_one_and_half"
+            android:text="Press the start sync button to sync with the Sensor Unit."
+            android:textSize="14sp"
+            android:textColor="@android:color/black"/>
+
+        <Button
+            android:id="@+id/btn_start_sync"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/common_rounded_button_height"
+            android:layout_below="@+id/tv_sync_button"
+            android:layout_marginTop="@dimen/activity_gutter_margin"
+            android:text="START SYNC"
+            style="@style/AppThemeBase.CommonRoundedButton"/>
+
+        <TextView
+            android:id="@+id/tv_enter_device_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_start_sync"
+            android:layout_marginTop="@dimen/activity_gutter_margin_one_and_half"
+            android:text="Please enter the device Id."
+            android:textSize="14sp"
+            android:textColor="@android:color/black"/>
+
+        <EditText
+            android:id="@+id/et_device_id"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_enter_device_id"
+            android:layout_marginTop="@dimen/activity_gutter_margin"
+            android:hint="SFL XYZ1234"
+            style="@style/edit_16_bg_padding"/>
+
+        <Button
+            android:id="@+id/btn_done"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/common_rounded_button_height"
+            android:layout_below="@+id/et_device_id"
+            android:layout_marginTop="@dimen/activity_gutter_margin"
+            android:text="DONE"
+            style="@style/AppThemeBase.CommonRoundedButton"/>
+
+        <ImageView
+            android:id="@+id/iv_device_id"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tv_enter_device_id"
+            android:layout_alignBottom="@+id/btn_done"
+            android:layout_toRightOf="@+id/et_device_id"
+            android:layout_marginLeft="@dimen/activity_gutter_margin_double"
+            android:text="Please enter the device Id."
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:background="@color/darkGrey"/>
+
+    </RelativeLayout>
+
+</layout>

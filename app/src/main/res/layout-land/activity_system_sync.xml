@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_system_sync"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context="com.sattvamedtech.fetallite.activity.SystemSyncActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/d_16">
+
+        <ProgressBar
+            android:id="@+id/pbSetupSync"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d_48"
+            android:progressDrawable="@drawable/progress_bar_drawable" />
+
+        <TextView
+            android:id="@+id/tvProbeTab"
+            style="@style/text_18_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pbSetupSync"
+            android:layout_marginTop="@dimen/d_48"
+            android:text="@string/label_probe_tab_func"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/ivProbeTab"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/d_24"
+            android:layout_alignTop="@+id/tvProbeTab"
+            android:layout_marginStart="@dimen/d_8"
+            android:layout_toEndOf="@+id/tvProbeTab"
+            android:adjustViewBounds="true"
+            android:src="@drawable/done"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvDeviceConn"
+            style="@style/text_18_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvProbeTab"
+            android:layout_marginTop="@dimen/d_8"
+            android:text="@string/label_device_conn" />
+
+        <ImageView
+            android:id="@+id/ivDeviceConn"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/d_24"
+            android:layout_alignTop="@+id/tvDeviceConn"
+            android:layout_marginStart="@dimen/d_8"
+            android:layout_toEndOf="@+id/tvProbeTab"
+            android:src="@drawable/done"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvSetupSoftware"
+            style="@style/text_18_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvDeviceConn"
+            android:layout_marginTop="@dimen/d_8"
+            android:text="@string/label_setup_software" />
+
+        <ImageView
+            android:id="@+id/ivSetupSoftware"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/d_24"
+            android:layout_alignTop="@+id/tvSetupSoftware"
+            android:layout_marginStart="@dimen/d_8"
+            android:layout_toEndOf="@+id/tvProbeTab"
+            android:src="@drawable/done"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvPrinter"
+            style="@style/text_18_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvSetupSoftware"
+            android:layout_marginTop="@dimen/d_8"
+            android:text="@string/label_printer"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/ivPrinter"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/d_24"
+            android:layout_alignTop="@+id/tvPrinter"
+            android:layout_marginStart="@dimen/d_8"
+            android:layout_toEndOf="@+id/tvProbeTab"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvBattery"
+            style="@style/text_18_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvPrinter"
+            android:layout_marginTop="@dimen/d_8"
+            android:text="@string/label_battery" />
+
+        <ImageView
+            android:id="@+id/ivBattery"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/d_24"
+            android:layout_alignTop="@+id/tvBattery"
+            android:layout_marginStart="@dimen/d_8"
+            android:layout_toEndOf="@+id/tvProbeTab"
+            android:src="@drawable/done"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</LinearLayout>

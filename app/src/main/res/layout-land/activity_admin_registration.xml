@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/activity_admin_registration"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@android:color/white"
+              android:orientation="vertical"
+              tools:context="com.sattvamedtech.fetallite.activity.AdminRegistrationActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <TextView
+        style="@style/text_18_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/d_32"
+        android:layout_marginStart="@dimen/d_32"
+        android:layout_marginTop="@dimen/d_16"
+        android:text="Admin Details" />
+
+    <TextView
+        style="@style/text_16_grey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/d_32"
+        android:textStyle="italic"
+        android:layout_marginTop="@dimen/activity_gutter_margin_quarter"
+        android:text="@string/label_registration_help" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/d_8"
+        android:layout_marginStart="@dimen/d_32"
+        android:layout_marginEnd="@dimen/d_32"
+        android:layout_marginBottom="@dimen/d_16">
+
+        <View
+            android:id="@+id/vDummyHorizontalSeparator"
+            android:layout_width="@dimen/d_12"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilLoginId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_round_bordered_edit_box"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/vDummyHorizontalSeparator">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/etLoginId"
+                style="@style/edit_16_bg_padding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_login_id"
+                android:inputType="textEmailAddress"
+                android:imeOptions="flagNoExtractUi"
+                android:nextFocusForward="@+id/etPassword" />
+        </android.support.design.widget.TextInputLayout>
+
+        <!--<android.support.design.widget.TextInputLayout-->
+        <!--android:id="@+id/tilAdminName"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@drawable/bg_round_bordered_edit_box"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_marginTop="@dimen/d_8"-->
+        <!--android:layout_toEndOf="@+id/vDummyHorizontalSeparator">-->
+
+        <!--<android.support.design.widget.TextInputEditText-->
+        <!--android:id="@+id/etAdminName"-->
+        <!--style="@style/edit_16_bg_padding"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:hint="@string/prompt_Admin_Name"-->
+        <!--android:inputType="text"-->
+        <!--android:nextFocusDown="@+id/etPhoneNumber"-->
+        <!--android:padding="@dimen/d_8" />-->
+        <!--</android.support.design.widget.TextInputLayout>-->
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_round_bordered_edit_box"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tilLoginId"
+            android:layout_marginTop="@dimen/d_8"
+            android:layout_toStartOf="@+id/vDummyHorizontalSeparator">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/etPassword"
+                style="@style/edit_16_bg_padding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_password"
+                android:inputType="textPassword"
+                android:imeOptions="flagNoExtractUi"
+                android:nextFocusForward="@+id/etConfirmPassword" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilConfirmPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_round_bordered_edit_box"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tilPassword"
+            android:layout_marginTop="@dimen/d_8"
+            android:layout_toStartOf="@+id/vDummyHorizontalSeparator">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/etConfirmPassword"
+                style="@style/edit_16_bg_padding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_confirm_password"
+                android:inputType="textPassword"
+                android:imeOptions="flagNoExtractUi"
+                android:nextFocusForward="@+id/etAdminName" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilPhoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_round_bordered_edit_box"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/llAdminName"
+            android:layout_marginTop="@dimen/d_8"
+            android:layout_toEndOf="@+id/vDummyHorizontalSeparator">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/etPhoneNumber"
+                style="@style/edit_16_bg_padding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_phone_number"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:imeOptions="flagNoExtractUi"
+                android:nextFocusForward="@+id/etEmail" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_round_bordered_edit_box"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/tilPhoneNumber"
+            android:layout_marginTop="@dimen/d_8"
+            android:layout_toEndOf="@+id/vDummyHorizontalSeparator">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/etEmail"
+                style="@style/edit_16_bg_padding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_email"
+                android:inputType="textEmailAddress"
+                android:imeOptions="flagNoExtractUi"
+                android:nextFocusForward="@+id/sQuestion" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/text_18_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tilConfirmPassword"
+            android:layout_marginTop="@dimen/activity_gutter_margin_one_and_half"
+            android:text="@string/label_Security_question" />
+
+        <TextView
+            android:id="@+id/textinfo"
+            style="@style/text_16_grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView2"
+            android:textStyle="italic"
+            android:layout_marginTop="@dimen/activity_gutter_margin_quarter"
+            android:text="Security Questions" />
+
+        <Button
+            android:id="@+id/bNext"
+            style="@style/button_16_primary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:text="@string/action_next" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilAnswer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_round_bordered_edit_box"
+            android:layout_below="@+id/tilQuestion"
+            android:layout_marginTop="@dimen/d_8"
+            android:layout_alignParentStart="true"
+            android:imeOptions="flagNoExtractUi"
+            android:layout_alignEnd="@+id/tilQuestion">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/etAnswer"
+                style="@style/edit_16_bg_padding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_answer"
+                android:inputType="textEmailAddress"
+                android:imeOptions="flagNoExtractUi"
+                android:nextFocusForward="@+id/bNext"
+                android:padding="@dimen/d_8" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <FrameLayout
+            android:id="@+id/tilQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView2"
+            android:layout_below="@+id/textinfo"
+            android:layout_marginTop="@dimen/d_8"
+            android:background="@drawable/edit_text_grey_bg_with_padding">
+
+            <Spinner
+                android:id="@+id/sQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView2"
+                />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/llAdminName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/vDummyHorizontalSeparator">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tilAdminFirstName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_round_bordered_edit_box"
+                android:layout_marginEnd="@dimen/activity_gutter_margin_half"
+                android:layout_weight="1">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/etAdminName"
+                    style="@style/edit_16_bg_padding"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_Admin_First_Name"
+                    android:inputType="text"
+                    android:imeOptions="flagNoExtractUi"
+                    android:nextFocusDown="@+id/etAdminLastName"
+                    android:padding="@dimen/d_8" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tilAdminLastName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_round_bordered_edit_box"
+                android:layout_marginStart="@dimen/activity_gutter_margin_half"
+                android:layout_weight="1">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/etAdminLastName"
+                    style="@style/edit_16_bg_padding"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_Admin_Last_Name"
+                    android:inputType="text"
+                    android:nextFocusForward="@+id/etPhoneNumber"
+                    android:imeOptions="flagNoExtractUi"
+                    android:padding="@dimen/d_8" />
+
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

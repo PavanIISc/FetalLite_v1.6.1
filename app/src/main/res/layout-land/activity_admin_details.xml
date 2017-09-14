@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_admin_registration"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/d_16"
+    tools:context="com.sattvamedtech.fetallite.activity.AdminRegistrationActivity">
+
+    <include layout="@layout/toolbar"
+             android:id="@+id/include2" />
+
+    <TextView
+        style="@style/text_18_black"
+        android:layout_width="339dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/d_32"
+        android:text="@string/label_admin_login_as_user"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/include2"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="@dimen/d_32" />
+
+    <TextView
+        style="@style/text_18_black"
+        android:layout_width="339dp"
+        android:layout_height="wrap_content"
+        android:text="@string/label_admin_register_as_doctor"
+        android:id="@+id/tvAdminAsDoctor"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/tvAdminUser"
+        android:layout_alignStart="@+id/tvAdminUser" />
+
+    <TextView
+        style="@style/text_16_grey"
+        android:layout_width="297dp"
+        android:layout_height="wrap_content"
+        android:text="@string/tag_label_admin_login_as_user"
+        android:id="@+id/tvAdminUser"
+        android:textStyle="italic"
+        android:layout_below="@+id/textView4"
+        android:layout_alignStart="@+id/textView4" />
+
+    <TextView
+        style="@style/text_16_grey"
+        android:layout_width="297dp"
+        android:layout_height="wrap_content"
+        android:text="@string/tag_label_admin_register_as_doctor"
+        android:id="@+id/tvTagAdminDoctor"
+        android:textStyle="italic"
+        android:layout_below="@+id/tvAdminAsDoctor"
+        android:layout_alignStart="@+id/tvAdminAsDoctor" />
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/text_16_grey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tag_admin_details_edit"
+        android:layout_below="@+id/tvTagAdminDoctor"
+        android:layout_alignStart="@+id/tvTagAdminDoctor"
+        android:layout_marginTop="25dp" />
+
+    <Button
+        android:id="@+id/bBack"
+        android:layout_width="wrap_content"
+        style="@style/button_16_primary"
+        android:layout_height="wrap_content"
+        android:text="@string/action_back"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignParentBottom="true" />
+
+    <Button
+        android:id="@+id/bNext"
+        android:layout_width="wrap_content"
+        style="@style/button_16_primary"
+        android:layout_height="wrap_content"
+        android:text="@string/action_next"
+        android:layout_marginEnd="@dimen/d_32"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"/>
+
+    <include
+        android:id="@+id/ll_conduct_test"
+        layout="@layout/layout_toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_toEndOf="@+id/textView4"
+        android:layout_marginStart="@dimen/activity_gutter_margin_quadruple"/>
+
+    <include
+        android:id="@+id/ll_doctor"
+        layout="@layout/layout_toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvAdminAsDoctor"
+        android:layout_toEndOf="@+id/tvAdminAsDoctor"
+        android:layout_alignStart="@+id/ll_conduct_test" />
+
+
+</RelativeLayout>

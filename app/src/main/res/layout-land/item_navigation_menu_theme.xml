@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llRoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/d_4"
+    android:paddingEnd="@dimen/d_8"
+    android:paddingStart="@dimen/d_8"
+    android:paddingTop="@dimen/d_4">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        style="@style/text_14_black"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textAllCaps="true"
+        android:textColor="@color/text_enable_selector" />
+
+    <RadioGroup
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbDark"
+            style="@style/text_14_white"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/radio_dark_bg"
+            android:button="@android:color/transparent"
+            android:gravity="center"
+            android:paddingBottom="@dimen/d_4"
+            android:paddingEnd="@dimen/d_12"
+            android:paddingStart="@dimen/d_12"
+            android:paddingTop="@dimen/d_4"
+            android:text="@string/radio_dark"
+            android:textAllCaps="true"
+            android:textColor="@color/text_enable_selector_dark" />
+
+        <RadioButton
+            android:id="@+id/rbLight"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/radio_light_bg"
+            android:button="@android:color/transparent"
+            android:gravity="center"
+            android:paddingBottom="@dimen/d_4"
+            android:paddingEnd="@dimen/d_12"
+            android:paddingStart="@dimen/d_12"
+            android:paddingTop="@dimen/d_4"
+            android:text="@string/radio_light"
+            android:textAllCaps="true"
+            android:textColor="@color/text_enable_selector" />
+
+    </RadioGroup>
+
+</LinearLayout>

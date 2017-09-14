@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar"/>
+
+    <TextView
+        android:id="@+id/tvHospitalDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/text_18_black"
+        android:layout_marginStart="@dimen/d_32"
+        android:layout_marginTop="@dimen/activity_gutter_margin_double"
+        android:text="Enter Hospital Details."
+        android:layout_below="@+id/include"
+        android:layout_alignParentStart="true" />
+
+
+
+    <TextView
+        android:id="@+id/tvInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        style="@style/text_16_grey"
+        android:layout_marginStart="@dimen/d_32"
+        android:layout_marginTop="@dimen/activity_gutter_margin_quarter"
+        android:text="You may add more hospitals and edit existing hospitals details later by going to Hospital Settings in the Menu."
+        android:layout_below="@+id/tvHospitalDetails"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/etHospitalName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_gutter_margin_one_and_half"
+        android:inputType="textCapCharacters"
+        android:layout_alignEnd="@+id/tvInfo"
+        android:hint="Hospital Name*"
+        android:layout_below="@+id/tvInfo"
+        android:layout_alignStart="@+id/tvInfo"
+        android:imeOptions="flagNoExtractUi"
+        style="@style/edit_16_bg_padding"/>
+
+    <EditText
+        android:id="@+id/etPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_gutter_margin_three_fourth"
+        android:inputType="phone"
+        android:layout_alignEnd="@+id/tvInfo"
+        android:hint="Phone Number*"
+        android:maxLength="10"
+        android:layout_below="@+id/etHospitalName"
+        android:layout_alignStart="@+id/tvInfo"
+        android:imeOptions="flagNoExtractUi"
+        style="@style/edit_16_bg_padding"/>
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_gutter_margin_three_fourth"
+        android:inputType="textEmailAddress"
+        android:layout_alignEnd="@+id/tvInfo"
+        android:hint="Email*"
+        android:layout_below="@+id/etPhoneNumber"
+        android:layout_alignStart="@+id/tvInfo"
+        android:imeOptions="flagNoExtractUi"
+        style="@style/edit_16_bg_padding"/>
+
+    <EditText
+        android:id="@+id/etAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_gutter_margin_three_fourth"
+        android:inputType="textCapCharacters"
+        android:layout_alignEnd="@+id/tvInfo"
+        android:hint="Address*"
+        android:layout_below="@+id/etEmail"
+        android:layout_alignStart="@+id/tvInfo"
+        android:imeOptions="flagNoExtractUi"
+        style="@style/edit_16_bg_padding"/>
+
+    <Button
+        android:id="@+id/bNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        style="@style/button_16_primary"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="@dimen/d_16"
+        android:layout_marginEnd="@dimen/d_32"
+        android:text="NEXT" />
+
+</RelativeLayout>

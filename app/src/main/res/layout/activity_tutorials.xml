@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_tutorials"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context="com.sattvamedtech.fetallite.activity.TutorialsActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@+id/rlButtons"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginEnd="@dimen/d_16"
+        android:layout_marginStart="@dimen/d_16"
+        android:layout_marginTop="@dimen/d_16"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/layout_border_grey"
+            android:orientation="vertical"
+            android:padding="@dimen/d_12">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_32"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/text_16_black"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/label_video_tutorials" />
+
+                <Button
+                    android:id="@+id/bPlayAll"
+                    style="@style/button_16_primary_full"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="0dp"
+                    android:padding="@dimen/d_4"
+                    android:text="@string/action_play_all"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_2"
+                android:layout_marginTop="@dimen/d_4"
+                android:background="@color/darkGrey" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvVideos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d_4"
+                android:scrollbarThumbVertical="@drawable/scroll_thumb" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/d_8"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/layout_border_grey"
+            android:orientation="vertical"
+            android:padding="@dimen/d_12">
+
+            <TextView
+                style="@style/text_16_black"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_32"
+                android:gravity="center_vertical"
+                android:text="@string/label_user_guide" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_2"
+                android:layout_marginTop="@dimen/d_4"
+                android:background="@color/darkGrey" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvGuides"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d_4"
+                android:scrollbarThumbVertical="@drawable/scroll_thumb" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/d_16">
+
+        <Button
+            android:id="@+id/bNext"
+            style="@style/button_16_primary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="@string/action_next" />
+
+        <Button
+            android:id="@+id/bContactCare"
+            style="@style/button_16_primary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/d_8"
+            android:layout_toStartOf="@+id/bNext"
+            android:text="@string/action_contact_care"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

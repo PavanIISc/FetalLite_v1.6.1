@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarThumbVertical="@drawable/scroll_thumb"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/d_16"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            style="@style/text_14_black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_enter_new_user_details" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilUserId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="@dimen/d_4"
+            >
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/etUserId"
+                style="@style/edit_16_bg_padding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d_8"
+                android:hint="@string/prompt_username"
+                android:inputType="textPersonName"
+                android:padding="@dimen/d_4" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilUserFName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="@dimen/d_4"
+            >
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/etUserFname"
+                style="@style/edit_16_bg_padding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d_8"
+                android:hint="@string/prompt_fname"
+                android:inputType="textPersonName"
+                android:padding="@dimen/d_4" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilUserLName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="@dimen/d_4"
+            >
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/etUserLname"
+                style="@style/edit_16_bg_padding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d_8"
+                android:hint="@string/prompt_lname"
+                android:inputType="textPersonName"
+                android:padding="@dimen/d_4" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="@dimen/d_4"
+            >
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/etPassword"
+                style="@style/edit_16_bg_padding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d_8"
+                android:hint="@string/prompt_password"
+                android:inputType="textPassword"
+                android:padding="@dimen/d_4" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="@dimen/d_4"
+            >
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/etConfirmPassword"
+                style="@style/edit_16_bg_padding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d_4"
+                android:hint="@string/prompt_confirm_password"
+                android:inputType="textPassword"
+                android:padding="@dimen/d_4" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilUserEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="@dimen/d_4"
+            >
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/etUserEmail"
+            style="@style/edit_16_bg_padding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d_4"
+            android:hint="@string/prompt_user_email"
+            android:inputType="textPersonName"
+            android:padding="@dimen/d_4" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="@dimen/d_4"
+            >
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/etUserPhoneNumber"
+            style="@style/edit_16_bg_padding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d_4"
+            android:maxLength="10"
+            android:hint="@string/prompt_user_phone_number"
+            android:inputType="phone"
+            android:padding="@dimen/d_4" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d_16"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bCancel"
+                style="@style/button_14_primary"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/action_cancel" />
+
+            <View
+                android:layout_width="@dimen/d_4"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/bSave"
+                style="@style/button_14_primary"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/action_save" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
+
+

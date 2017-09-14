@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_test_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:padding="@dimen/d_16"
+    tools:context="com.sattvamedtech.fetallite.fragment.TestFragment">
+
+    <Switch
+        android:id="@+id/swDummy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/d_64"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/llFhr"
+            android:layout_width="@dimen/d_128"
+            android:layout_height="@dimen/d_128"
+            android:background="@drawable/fhr_bg"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvFhrLabel"
+                style="@style/text_16_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d_16"
+                android:text="@string/label_fhr" />
+
+            <TextView
+                android:id="@+id/tvFhr"
+                style="@style/text_40_black_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llMhr"
+            android:layout_width="@dimen/d_128"
+            android:layout_height="@dimen/d_128"
+            android:layout_marginStart="@dimen/d_8"
+            android:background="@drawable/mhr_bg"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvMhrLabel"
+                style="@style/text_16_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d_16"
+                android:text="@string/label_mhr" />
+
+            <TextView
+                android:id="@+id/tvMhr"
+                style="@style/text_40_black_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/d_1"
+            android:layout_height="@dimen/d_48"
+            android:layout_marginStart="@dimen/d_8"
+            android:background="@color/darkGrey" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/d_16"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvGestationalAge"
+                style="@style/text_20_black_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_gestational_weeks_value"
+                android:textAllCaps="true" />
+
+            <TextView
+                android:id="@+id/tvAccelerations"
+                style="@style/text_14_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_accelerations"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tvDecelerations"
+                style="@style/text_14_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_decelerations"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/d_1"
+            android:layout_height="@dimen/d_48"
+            android:layout_marginStart="@dimen/d_16"
+            android:background="@color/darkGrey" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/d_16"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id = "@+id/tvTestDate"
+                style="@style/text_14_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tvName"
+                style="@style/text_14_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_name_value" />
+
+            <TextView
+                android:id="@+id/tvPatientId"
+                style="@style/text_14_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_patient_id_value" />
+
+            <TextView
+                android:id="@+id/tvDoctor"
+                style="@style/text_14_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_test_doctor"
+              />
+
+
+            <TextView
+                android:id="@+id/tvUser"
+                style="@style/text_14_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_test_user"
+                 />
+
+            <Button
+                android:id="@+id/bPatientDetails"
+                style="@style/button_14_primary_full"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d_2"
+                android:minHeight="0dp"
+                android:paddingBottom="@dimen/d_4"
+                android:paddingEnd="@dimen/d_8"
+                android:paddingStart="@dimen/d_8"
+                android:paddingTop="@dimen/d_4"
+                android:text="@string/action_details" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llButtonControls"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/d_16"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/bSave"
+                style="@style/button_14_primary_full"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d_2"
+                android:minHeight="0dp"
+                android:paddingBottom="@dimen/d_4"
+                android:paddingEnd="@dimen/d_8"
+                android:paddingStart="@dimen/d_8"
+                android:paddingTop="@dimen/d_4"
+                android:text="@string/action_save"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/bPrint"
+                style="@style/button_14_primary_full"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d_2"
+                android:minHeight="0dp"
+                android:paddingBottom="@dimen/d_4"
+                android:paddingEnd="@dimen/d_8"
+                android:paddingStart="@dimen/d_8"
+                android:paddingTop="@dimen/d_4"
+                android:text="@string/action_print"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/bTestAgain"
+                style="@style/button_14_primary_full"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d_2"
+                android:minHeight="0dp"
+                android:paddingBottom="@dimen/d_4"
+                android:paddingEnd="@dimen/d_8"
+                android:paddingStart="@dimen/d_8"
+                android:paddingTop="@dimen/d_4"
+                android:text="@string/action_test_again"
+
+                 />
+
+            <Button
+                android:id="@+id/bExit"
+                style="@style/button_14_primary_full"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d_8"
+                android:minHeight="0dp"
+                android:paddingBottom="@dimen/d_4"
+                android:paddingEnd="@dimen/d_8"
+                android:paddingStart="@dimen/d_8"
+                android:paddingTop="@dimen/d_4"
+                android:text="@string/action_exit" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/d_16"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/llTimerTestContorl"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/vBackground"
+                android:layout_width="@dimen/d_32"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/tvFHR"
+                style="@style/text_16_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/vChartSeparator"
+                android:layout_alignEnd="@+id/vBackground"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:rotation="-90"
+                android:text="FHR" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/chartFetal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/vChartSeparator"
+                android:layout_toEndOf="@+id/tvFHR" />
+
+            <View
+                android:id="@+id/vChartSeparator"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/d_2"
+                android:layout_centerInParent="true"
+                android:background = "@drawable/graph_round_shape_drawable"
+                />
+<!--android:background="@android:color/transparent" -->
+
+
+            <TextView
+                android:id="@+id/tvUC"
+                style="@style/text_18_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/vBackground"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignTop="@+id/vChartSeparator"
+                android:gravity="center"
+                android:rotation="-90"
+                android:text="UC" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/chartMaternal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/vChartSeparator"
+                android:layout_toEndOf="@+id/tvUC" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/llTimerTestContorl"
+            android:layout_width="@dimen/d_96"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="@dimen/d_8"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.github.lzyzsd.circleprogress.DonutProgress
+                        android:id="@+id/dpTestDuration"
+                        android:layout_width="@dimen/d_72"
+                        android:layout_height="@dimen/d_72"
+                        android:layout_gravity="center"
+                        android:rotation="-90"
+                        app:donut_finished_color="@color/colorAccent"
+                        app:donut_finished_stroke_width="@dimen/d_2"
+                        app:donut_show_text="false"
+                        app:donut_unfinished_stroke_width="@dimen/d_2" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvTestTime"
+                            style="@style/text_20_black_bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/d_4" />
+
+                        <TextView
+                            android:id="@+id/tvMinSecLabel"
+                            style="@style/text_10_black"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/nd_4"
+                            android:text="@string/label_min_sec" />
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/tvTestTimeLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_test_time"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/d_12"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/d_8"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/ibStopTest"
+                    android:layout_width="@dimen/d_64"
+                    android:layout_height="@dimen/d_64"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/stop_test" />
+
+
+
+                <TextView
+                    android:id="@+id/tvStopTest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/action_stop_test"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/d_12"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/d_8"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/ibSendSms"
+                    android:layout_width="@dimen/d_64"
+                    android:layout_height="@dimen/d_64"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/send_sms"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/tvSendSmsLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/action_send_sms"
+                    android:textAllCaps="true"
+                    android:visibility="gone"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/d_16"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/text_14_black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_edit_details" />
+
+        <EditText
+            android:id="@+id/etAdminID"
+            style="@style/edit_16_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d_8"
+            android:hint="@string/prompt_admin_id"
+            android:inputType="textPersonName"
+            android:padding="@dimen/d_8" />
+
+        <EditText
+            android:id="@+id/etAdminPhoneNumber"
+            style="@style/edit_16_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d_8"
+            android:maxLength="10"
+            android:hint="@string/prompt_phone_number"
+            android:inputType="phone"
+            android:padding="@dimen/d_4" />
+
+        <EditText
+            android:id="@+id/etAdminEmail"
+            style="@style/edit_16_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d_8"
+            android:hint="@string/prompt_email"
+            android:inputType="textEmailAddress"
+            android:padding="@dimen/d_4" />
+
+        <EditText
+            android:id="@+id/etAdminOldPassword"
+            style="@style/edit_16_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d_8"
+            android:hint="@string/prompt_admin_old_password"
+            android:inputType="textPassword"
+            android:padding="@dimen/d_4" />
+
+        <EditText
+            android:id="@+id/etAdminNewPassword"
+            style="@style/edit_16_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d_8"
+            android:hint="@string/prompt_admin_new_password"
+            android:inputType="textPassword"
+            android:padding="@dimen/d_4" />
+
+        <EditText
+            android:id="@+id/etAdminConfirmPassword"
+            style="@style/edit_16_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d_8"
+            android:hint="@string/prompt_admin_confirm_password"
+            android:inputType="textPassword"
+            android:padding="@dimen/d_4" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d_8"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bChangePwd"
+                style="@style/button_14_primary"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/change_password" />
+
+            <View
+                android:layout_width="@dimen/d_4"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/bReset"
+                style="@style/button_14_primary"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/action_reset"
+                android:layout_weight="1"
+                 />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d_8"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/bCancel"
+                style="@style/button_14_primary"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/action_cancel" />
+
+            <View
+                android:layout_width="@dimen/d_4"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/bSave"
+                style="@style/button_14_primary"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/action_save" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

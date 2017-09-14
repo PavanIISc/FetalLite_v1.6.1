@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/d_16">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        style="@style/text_18_black_bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_4"
+        android:layout_marginTop="@dimen/d_8"
+        android:background="@color/colorAccent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d_8">
+
+        <TextView
+            android:id="@+id/tvContent"
+            style="@style/text_16_black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d_8"
+        android:gravity="end"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/bDismiss"
+            style="@style/button_16_primary"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_weight="0.5"
+            android:text="@string/action_dismiss" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/d_16"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout">
+
+        <FrameLayout
+            android:id="@+id/tilHospitalList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/d_4"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="@dimen/d_6"
+            android:background="@drawable/edit_text_grey_bg_with_padding">
+
+        </FrameLayout>
+        <Spinner
+            android:id="@+id/sHospitalList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp"
+            android:layout_below="@+id/tilHospitalList"
+            android:layout_alignParentStart="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/d_16"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bCancel"
+                style="@style/button_14_primary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/activity_gutter_margin_half"
+                android:layout_weight="1"
+                android:text="@string/action_cancel"
+                android:layout_below="@+id/linearLayout"
+                android:layout_alignStart="@+id/linearLayout" />
+
+            <Button
+                android:id="@+id/bOk"
+                style="@style/button_14_primary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_gutter_margin_half"
+                android:text="@string/action_ok"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

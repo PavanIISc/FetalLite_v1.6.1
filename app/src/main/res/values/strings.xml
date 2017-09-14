@@ -1,0 +1,358 @@
+<resources>
+    <string name="app_name">FetalLite</string>
+    <string name="version">1.6</string>
+
+    <!--System Sync-->
+    <string name="label_system_sync">System Sync In Progress</string>
+    <string name="label_probe_tab_func">Probe and Tablet Functions</string>
+    <string name="label_device_conn">Device Connectivity</string>
+    <string name="label_setup_software">Setting-up Software</string>
+    <string name="label_printer">Printer</string>
+    <string name="label_battery">Battery</string>
+
+    <!--Device Registration-->
+    <string name="label_tab_battery_low">Tablet battery low.  Please charge to continue using.Minimum battery required : 20% </string>
+    <string name="label_type_tab_battery_low">Battery Low</string>
+    <string name="label_sensor_battery_low">Sensor Unit battery low.  Please charge to continue using.Minimum battery required : 20% </string>
+    <string name="label_type_sensor_battery_low">Battery Low</string>
+    <string name="label_tab_sens_battery_low">Tablet/Sensor Unit battery low.  Please charge to continue using.Minimum battery required : 20% </string>
+    <string name="label_type_tab_sens_battery_low">Battery Low</string>
+    <string name="label_invalid_device_id">Invalid Device ID</string>
+    <string name="error_deviceID_empty">Please enter device ID</string>
+    <string name="device_registration_failed">Device Registration Failed</string>
+    <!--Registration-->
+    <string name="label_registration"><b>REGISTRATION</b></string>
+    <string name="label_registration_help">Please fill in the below details to complete registration and begin installation</string>
+    <string name="label_Security_question">Security Question</string>
+    <string name="prompt_login_id">Admin Id<sup>*</sup></string>
+    <string name="prompt_password">Password<sup>*</sup> <i> (Min 6 characters) </i> </string>
+    <string name="prompt_confirm_password">Confirm Password<sup>*</sup></string>
+    <string name="prompt_Admin_First_Name">First Name<sup>*</sup></string>
+    <string name="prompt_Admin_Last_Name">Last Name<sup>*</sup></string>
+    <string name="prompt_phone_number">Phone Number<sup>*</sup></string>
+    <string name="prompt_email">E-mail Address<sup>*</sup></string>
+    <string name="error_invalid_data">Invalid Details</string>
+    <string name="error_login_id_required">Admin Id is required</string>
+    <string name="error_login_id_invalid">Invalid Admin Id</string>
+    <string name="error_admin_name_required">Admin Name is required</string>
+    <string name="error_admin_name_invalid">Invalid Admin Name</string>
+    <string name="error_question_required">Security Question is required</string>
+    <string name="error_answer_required">Answer is required</string>
+    <string name="error_password_required">Password should be of minimum %1$d characters</string>
+    <string name="error_password_min_length">Password should be of minimum %1$d characters</string>
+    <string name="error_confirm_password_required">Password and Confirm Password do not match</string>
+    <string name="error_confirm_password_min_length">Password and Confirm Password do not match</string>
+    <string name="error_password_mismatch">Password and Confirm Password do not match</string>
+    <string name="error_invalid_email">Invalid e-mail Address</string>
+    <string name="success_registration">REGISTRATION COMPLETE </string>
+    <string name="error_phone_length"> Invalid phone number </string>
+    <string name="success_thank_you">Thank you for registering!</string>
+    <string name="action_setup_admin_dash">Setup Admin Dashboard</string>
+    <string name="prompt_question">Question <sup>*</sup>(in case forgot password)</string>
+    <string name="prompt_answer">Answer <sup>*</sup></string>
+    <string name="admin_forgot_password">Admin Forgot Password</string>
+
+    <!--Device Registration-->
+    <string name="label_device_registration">DEVICE REGISTRATION</string>
+    <string name="success_device_registration">DEVICE REGISTRATION SUCCESSFUL </string>
+    <string name="success_turn_off_device">Please turn off the sensor unit</string>
+
+    <!--Admin Dashboard-->
+    <string name="label_admin_dashboard">ADMIN DASHBOARD</string>
+    <string name="label_hospital_dashboard">HOSPITAL SETTINGS</string>
+    <string name="action_go_to_tutorials">Next</string>
+    <string name="label_login_id">Admin Id</string>
+    <string name="label_password">Password</string>
+    <string name="label_dummy_password">******</string>
+    <string name="label_phone">Phone</string>
+    <string name="label_email">E-mail</string>
+    <string name="label_address">Address</string>
+    <string name="label_add_hospital">HOSPITAL INFORMATION</string>
+    <string name="label_register_hospital">HOSPITAL REGISTRATION</string>
+    <string name="label_add_hospital_dashboard">ADD HOSPITAL</string>
+    <string name="error_no_user_doctor">Please add at least one user and one doctor for each hospital to proceed.</string>
+    <string name="error_no_user_doctor_enabled">Please add and enable at least one user and one doctor for each hospital to proceed.</string>
+    <string name="error_no_hospital">Please add at least one hospital to proceed.</string>
+    <string name="admin_tag">This will be used incase you forget your admin password</string>
+    <string name="complete_update">UPDATE COMPLETE</string>
+    <string name="label_kiosk">KIOSK MODE</string>
+    <string name="confim_kiosk_start">Do you want to start Kiosk Mode?</string>
+    <string name="confim_kiosk_stop">Do you want to stop Kiosk Mode?</string>
+
+    <!--Admin Details-->
+    <string name="label_admin_login_as_user">Allow admin to login to conduct test?*</string>
+    <string name="tag_label_admin_login_as_user"> By choosing YES the admin will be able to login to conduct tests and view all patient data</string>
+    <string name="label_admin_register_as_doctor">Register admin as doctor?*</string>
+    <string name="tag_label_admin_register_as_doctor">By choosing YES the admin may get patient related alerts on their registered phone number</string>
+    <string name="tag_admin_details_edit"> All admin details can be edited from Menu</string>
+    <string name="label_do_not_reset">DO NOT RESET</string>
+    <string name="error_donot_reset"> Please do not reset the Admin as either User/Doctor, as there is only one User/Doctor</string>
+    <string name="label_disable_admin"> CONFIRM ACTION </string>
+    <string name="string_admin"> Do you want to change Admin credentials </string>
+
+    <!--Admin Edit-->
+    <string name="label_edit_admin_details">ADMIN INFORMATION</string>
+    <string name="label_edit_details">Enter Admin Details</string>
+    <string name="prompt_admin_id">Admin ID</string>
+    <string name="prompt_admin_email">Email</string>
+    <string name="prompt_admin_phone_numer">Phone Number</string>
+    <string name="prompt_admin_old_password">Old Password <i>min 6 characters</i></string>
+    <string name="prompt_admin_new_password">New Password <i>min 6 characters</i></string>
+    <string name="prompt_admin_confirm_password">Confirm Password <i>min 6 characters</i></string>
+    <string name="change_password">Change Password</string>
+    <string name="complete_admin_update">Admin details has been updated successfully </string>
+    <string name="error_old_password_required">Old password does not match</string>
+
+
+    <!--Add Hospital-->
+    <string name="label_enter_hospital_details">Enter Hospital Details</string>
+    <string name="label_edit_hospital">HOSPITAL INFORMATION</string>
+    <string name="prompt_hospital_name">Hospital Name<sup>*</sup></string>
+    <string name="hospital_tag"> <i>You may add more hospitals and edit existing hospital details by later by going to <b> Hospital Settings</b> in the Menu</i></string>
+    <string name="prompt_address">Address<sup>*</sup></string>
+    <string name="error_hospital_name_required">Hospital Name is required</string>
+    <string name="error_phone_number_required">Phone Number is required</string>
+    <string name="error_address_required">Address is required</string>
+    <string name="error_email_required">Invalid E-mail Address</string>
+    <string name="error_fname">Invalid First Name</string>
+    <string name="error_lname">Invalid Surname</string>
+    <string name="success_hospital_add">Hospital has been added successfully</string>
+    <string name="success_hospital_edit">Hospital has been updated successfully</string>
+    <string name="error_hospital_name_exists">Hospital Exists</string>
+
+    <!--Add User-->
+    <string name="label_add_user">USER INFORMATION</string>
+    <string name="label_edit_user">USER INFORMATION</string>
+    <string name="label_enter_new_user_details">Enter User Details</string>
+    <string name="prompt_username">User ID<sup>*</sup></string>
+    <string name="error_userid_required">User ID is required</string>
+    <string name="error_userid_invalid">Invalid User ID</string>
+    <string name="error_user_fname_required">First name is required</string>
+    <string name="error_user_lname_required">Surname is required</string>
+    <string name="prompt_user_phone_number">Phone Number</string>
+    <string name="prompt_user_email">E-mail Address</string>
+    <string name="error_username_exists">User ID already exists. Please try again with some other username.</string>
+    <string name="success_user_add">User has been added successfully</string>
+    <string name="success_user_edit">User has been updated successfully</string>
+    <string name="label_disable_user">DISABLE USER</string>
+    <string name="label_disable_user_confirm">Do you want to disable %1$s?</string>
+    <string name="label_enable_user">ENABLE USER</string>
+    <string name="label_enable_user_confirm">Do you want to enable %1$s?</string>
+
+    <!--Add Doctor-->
+    <string name="label_doctor_info">DOCTOR INFORMATION</string>
+    <string name="label_add_doctor">DOCTOR INFORMATION</string>
+    <string name="label_edit_doctor">DOCTOR INFORMATION</string>
+    <string name="label_enter_doctor_details">Enter Doctor\'s Details</string>
+    <string name="prompt_name">Name<sup>*</sup></string>
+    <string name="prompt_fname">First Name<sup>*</sup></string>
+    <string name="prompt_lname">Surname</string>
+    <string name="error_name_doctor"> Doctor name is required.</string>
+    <string name="success_doctor_add">Doctor has been added successfully</string>
+    <string name="success_doctor_edit">Doctor has been updated successfully</string>
+    <string name="error_doctor_name_exists">Doctor Name already exists</string>
+    <string name="error_name">Invalid Name</string>
+    <string name="label_disable_doctor">DISABLE DOCTOR</string>
+    <string name="label_disable_doctor_confirm">Do you want  to disable %1$s?</string>
+    <string name="label_enable_doctor">ENABLE DOCTOR</string>
+    <string name="label_enable_doctor_confirm">Do you want to enable %1$s?</string>
+
+    <!--Hospital Details-->
+    <string name="label_user_cred">Users</string>
+    <string name="label_user_cred_cap">USER CREDENTIALS</string>
+    <string name="label_doctor_dir">Doctor\'s Contact</string>
+    <string name="label_delete_user_confirm">Are you sure you want to delete %1$s?</string>
+    <string name="label_delete_hospital_confirm">All users and doctors will also be deleted with the hospital.\nAre you sure you want to delete %1$s?</string>
+
+    <!--Tutorials-->
+    <string name="label_tutorials">TUTORIALS.. USER GUIDE</string>
+    <string name="action_contact_care">Contact Customer Care</string>
+    <string name="label_video_tutorials">VIDEO TUTORIALS</string>
+    <string name="action_play_all">Play All</string>
+    <string name="label_user_guide">USER GUIDE</string>
+
+    <!--Login-->
+    <string name="label_login_page">User LogIn Page</string>
+    <string name="action_forgot_password">Forgot Password</string>
+    <string name="label_forgot_password">Please ask admin to reset password</string>
+    <string name="action_login">Login</string>
+    <string name="error_invalid_credentials">Invalid credentials entered. Please check the ID/Password and try again</string>
+    <string name="alert_invalid_session">Your session has expired.\nYou have been logged out.</string>
+    <string name="error_contact_admin">Please contact admin for change of password.</string>
+    <string name="error_invaild_question_answer">Question and Answer Mismatch!!!</string>
+
+
+    <!--Home-->
+    <string name="action_menu">Menu</string>
+    <string name="action_new_test">New Test</string>
+    <string name="action_view_data">View Data</string>
+    <string name="label_start_device_for_test">Please start the device to start a new test.</string>
+
+    <!--Navigation Menu-->
+    <string name="item_brightness">Brightness</string>
+    <string name="item_theme">Theme</string>
+    <string name="item_view_patient_data">View Patient Data</string>
+    <string name="item_doctor_dir">Doctor\'s Contact</string>
+    <string name="item_hospital_details">Hospital Settings</string>
+    <string name="item_add_new_hospital">Add New Hospital</string>
+    <string name="item_admin_details">Admin Details</string>
+    <string name="item_admin_dash">Admin Dashboard</string>
+    <string name="item_tutorial">Tutorials &amp; User Guide</string>
+    <string name="item_customer">Customer Care</string>
+    <string name="item_about">About</string>
+    <string name="item_logout">Logout</string>
+    <string name="confirm_logout">Are you sure?</string>
+    <string name="radio_dark">Dark</string>
+    <string name="radio_light">Light</string>
+
+    <!--New Test-->
+    <string name="label_new_test">NEW TEST DETAILS</string>
+    <string name="prompt_stop_sensor">Please Turn Off the Sensor Unit</string>
+    <string name="label_enter_patient_details">Enter patient details</string>
+    <string name="prompt_id">ID</string>
+    <string name="prompt_age">Age<sup>*</sup></string>
+    <string name="prompt_first_name">First Name<sup>*</sup></string>
+    <string name="prompt_surname">Surname</string>
+    <string name="prompt_risk_factors">Risk Factors</string>
+    <string name="prompt_gravidity">Gravidity</string>
+    <string name="prompt_doctor">Doctor</string>
+    <string name="label_gestational_age">Gestational Age</string>
+    <string name="label_set_test_duration">Set test duration</string>
+    <string name="label_confirm_details">CONFIRM DETAILS</string>
+    <string name="action_start_test">Start Test</string>
+    <string name="label_test_duration">%1$02d:%2$02d</string>
+    <string name="label_weeks">Weeks</string>
+    <string name="label_days">Days</string>
+    <string name="error_Id"> ID is required</string>
+    <string name="error_Pid_invalid"> Invalid Patient ID</string>
+    <string name="error_age"> Age must be atleast 10</string>
+    <string name="error_doctor_required">Doctor is required</string>
+    <string name="error_patient_name"> First name is required</string>
+    <string-array name="list_risk_factors">
+        <item>Risk Factor</item>
+        <item>Hypertension</item>
+        <item>Gestational Diabetes</item>
+        <item>Anaemia</item>
+    </string-array>
+    <string-array name="list_gravidity">
+        <item>Gravidity</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="list_parity">
+        <item>Parity</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <!--Test-->
+    <string name="error_device_placing_incorrect">Device placing is incorrect.\nPlease try again after adjusting the device.</string>
+    <string name="label_fhr">FHR</string>
+    <string name="label_mhr">MHR</string>
+    <string name="label_gestational_weeks_value">%1$d WEEKS</string>
+    <string name="label_accelerations">Accelerations %1$s</string>
+    <string name="label_decelerations">Decelerations %1$s</string>
+    <string name="label_name_value">Name: <b>%1$s %2$s</b></string>
+    <string name="label_patient_id_value">Patient ID: <b>%1$s</b></string>
+    <string name="action_details">Details</string>
+    <string name="action_print">Print</string>
+    <string name="action_test_again">Test Again</string>
+    <string name="action_exit">Exit</string>
+    <string name="label_min_sec">MIN : SEC</string>
+    <string name="label_test_time">Test Estimate</string>
+    <string name="label_test_duration_title">Test Duration</string>
+    <string name="label_test_doctor">Doctor : <b>%1$s</b></string>
+    <string name="label_test_user">User : <b>%1$s</b></string>
+    <string name="action_stop_test">Stop Test</string>
+    <string name="action_stopped">Stopped</string>
+    <string name="action_send_sms">Send SMS</string>
+    <string name="confirm_stop_test_manual">Are you sure?</string>
+    <string name="confirm_test_again">This will start a new test for the same patient. Continue?</string>
+    <string name="error_test_was_improper">Test was not proper so data doesn\'t exist.</string>
+    <string name="error_no_print_data">Print data doesn\'t exist.</string>
+    <string name="label_duration_complete">Test Duration Complete</string>
+    <string name="confirm_stop_test_duration">Test duration is completed.\nDo you want to stop test?</string>
+    <string name="label_stop_test">STOP TEST</string>
+
+    <!--Patient Details-->
+    <string name="label_gestational_age_value">Gestational Age: %1$d Weeks</string>
+    <string name="label_gravidity_value">Gravidity: %1$s</string>
+    <string name="label_patient_age_value">Patient Age: %1$d Years</string>
+    <string name="label_medical_indications_value">Medical Indications: %1$s</string>
+    <string name="label_test_history">Test History</string>
+    <string name="label_confirm_patient_name">Name : %1$s</string>
+    <string name="label_confirm_patient_ID">Patient ID : %1$s</string>
+    <string name="label_confirm_patient_riskfactor">Risk Factors : %1$s</string>
+    <string name="label_parity_value">Parity: %1$s</string>
+    <string name="label_test_duration_value">Test Duration: %1$d Mins</string>
+    <string name="label_test_doctor_name">Doctor: %1$s</string>
+
+    <!--Patient Test Data-->
+    <string name="label_patient_test_data">Patient Test Data</string>
+    <string name="prompt_patient_details">Enter Patient ID or Patient Name</string>
+    <string name="prompt_test_date">Date of Test</string>
+    <string name="prompt_test_date_format">Test Date (dd/mm/yyyy)</string>
+    <string name="error_all_fields_empty">All fields are empty.\nPlease enter value in at least one field.</string>
+    <string name="error_empty_test_results">No tests found for entered values.\nPlease try again.</string>
+    <string name="label_mins">%1$d mins</string>
+    <string name="label_no">No.</string>
+    <string name="label_patient_name">Patient Name</string>
+    <string name="label_patient_id">Patient ID</string>
+    <string name="label_test_duration_label_new">Test Duration</string>
+    <string name="label_patient_age">Age</string>
+    <string name="label_test_result">Test Result</string>
+    <string name="label_test_date">Test Date</string>
+    <string name="label_test_time_label">Test Time</string>
+    <string name="label_test_result_format">FHR: %1$s | Acc: %2$s | Decel: %3$s</string>
+    <string name="error_empty_invalid_files">Data for this test either does not exist or is invalid.</string>
+
+    <!--General-->
+    <string name="action_next">Next</string>
+    <string name="label_please_wait">Please wait…</string>
+    <string name="action_go_to_home">Go To Home Page</string>
+    <string name="action_dismiss">Close</string>
+    <string name="action_add">Add</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_save">Save</string>
+    <string name="action_reset">Reset</string>
+    <string name="action_ok">OK</string>
+    <string name="label_are_you_sure">Are you sure?</string>
+    <string name="label_logout">LOGOUT</string>
+    <string name="action_close">Close</string>
+    <string name="action_edit">Edit</string>
+    <string name="label_info">Info</string>
+    <string name="action_back">Back</string>
+    <string name="action_search">Search</string>
+    <string name="connection_lost">Connection Lost.. Exit App and Restart the device</string>
+
+    <!--Customer Care-->
+    <string name="label_ticket_generated">A ticket has been generated. Our team will call you shortly.</string>
+    <string name="label_ticket_no">Ticket No. %1$s</string>
+    <string name="label_cc_phone">Call Us: %1$s</string>
+    <string name="label_cc_email">Email: %1$s</string>
+
+    <!--About-->
+    <string name="label_about_fl">About FetalLite</string>
+    <string name="label_device_id">Device ID: %1$s</string>
+    <string name="label_admin">Device Admin: %1$s</string>
+    <string name="label_registration_date">Registration Date: %1$s</string>
+    <string name="label_last_service_date">Last Service Date: %1$s</string>
+    <string name="label_app_version">Build Number: SFLAPP 1.0</string>
+
+    <!--SMS-->
+    <string name="alert_sms_success">SMS is successfully sent</string>
+    <string name="alert_sms_failure">SMS could not be sent</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+
+
+
+</resources>
